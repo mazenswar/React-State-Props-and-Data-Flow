@@ -9,7 +9,12 @@ Your app should render FOUR components:
 3. Sidebar
 4. ShowPanel
 
-#API
+# API
+
+Clone the API from this repo: xxxxx
+
+After cloning it down, run `rails db:create && rails db:migrate && rails db:seed`
+
 The backend has one model "Person" with this the following attributes:
 
 1. Id
