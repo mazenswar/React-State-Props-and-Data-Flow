@@ -24,7 +24,7 @@ The backend has one model "Person" with this the following attributes:
 
 The main end point that you will use to fetch is ('http://localhost:3000/people')
 
-# Deliverables
+## Deliverables
 
 1. Identify the structure of the app and decide which component will hold your data.
 2. When your app loads, you should fetch data and store it in the state.
