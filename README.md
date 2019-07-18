@@ -1,68 +1,37 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Lab
 
-## Available Scripts
+# Components:
 
-In the project directory, you can run:
+Your app should render FOUR components:
 
-### `npm start`
+1. App
+2. Topbar
+3. Sidebar
+4. ShowPanel
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+#API
+The backend has one model "Person" with this the following attributes:
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+1. Id
+2. name
+3. img_url
+4. bio
 
-### `npm test`
+The main end point that you will use to fetch is ('http://localhost:3000/people')
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Deliverables
 
-### `npm run build`
+1. Identify the structure of the app and decide which component will hold your data.
+2. When your app loads, you should fetch data and store it in the state.
+3. <Topbar /> should have a form for creating a new "person". Creating a new person should persist on the backend and dynamically render that person's information in the show panel.
+4. <Topbar /> should receive one prop which is the name of the person selected from <Sidebar /> and render it.
+5. <Sidebar /> will render a list of people's names.
+6. When a user clickes on a name in <Sidebar />, the <ShowPanel /> should render that person's information.
+7. <ShowPanel /> should receive a prop of a person object based on what the user clicks in the <Sidepanel /> and render that person's information
+8. <ShowPanel /> has a delete button that should delete that person from the backend, the show panel, and the sidebar.
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+9. (OPTIONAL): some people have bios that are longer than one paragraph. These people will have the word 'BREAK' in their bios between paragraphs. Think about how you could render each of those paragraphs in its own `<p>` tag without displaying the word "BREAK".
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+At the end, your app should look something like this:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+![Alt Text](./demo.gif)
