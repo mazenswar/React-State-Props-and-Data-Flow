@@ -1,6 +1,6 @@
-## Lab
+# Lab
 
-# Components:
+## Components:
 
 Your app should render FOUR components:
 
@@ -9,9 +9,9 @@ Your app should render FOUR components:
 3. Sidebar
 4. ShowPanel
 
-# API
+## API
 
-Clone the API from this repo: xxxxx
+Clone the API from this repo: https://github.com/mazenswar/BACKEND-React-State-Props-and-Data-Flow
 
 After cloning it down, run `rails db:create && rails db:migrate && rails db:seed`
 
