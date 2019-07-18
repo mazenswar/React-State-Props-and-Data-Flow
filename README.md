@@ -1,5 +1,7 @@
 # Lab
 
+## The styling for the app the provided for you, please keep the structure intact for it to work.
+
 ## Components:
 
 Your app should render FOUR components:
